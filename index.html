@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movies-app</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- navbar -->
+    <nav>
+        <div class="navbar">
+            <div class="logo">
+                <h1>Movie Guide App</h1>
+            </div>
+            <div class="search-container">
+                <form action="">
+                    <input type="text" placeholder="Search Movie" class="inputBox">
+                    <button type="submit" class="searchBtn">Search</button>
+                </form>
+                <!-- ✅ Add this just after the form -->
+                <ul class="recent-searches" id="recentList"></ul>
+            </div>
+            <!-- Theme Toggle -->
+             <button id="themeToggle" class="theme-toggle">🌙 Dark Mode</button>
+        </div>
+    </nav>
+
+    <!-- main section of movie -->
+    <main>
+        <section>
+            <div class="movie-container noBackground">
+                <h2>Search Movie Detail Here..</h2>
+
+            </div>
+        </section>
+    </main>
+
+    <section style="max-width: 1200px; margin: auto; margin-bottom: 40px;">
+        <h3 style="margin-bottom: 8px;">Recent Searches:</h3>
+        <ul id="recentList" style="list-style: none; padding: 0; display: flex; flex-wrap: wrap; gap: 10px;"></ul>
+    </section>
+
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Movie Guide App</p>
+    </footer>
+    <script src="app.js"></script>
+</body>
+
+</html>
